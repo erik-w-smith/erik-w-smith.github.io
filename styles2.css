@@ -184,6 +184,9 @@ flex-wrap: wrap;
     align-items: center;
     margin:50px;
 }
+.product-card-container:hover {
+    cursor: pointer;
+}
 .product-card-container:hover > .product-card-img {
     opacity:0.5
 }
@@ -295,6 +298,7 @@ flex-wrap: wrap;
     flex:2;
     display:flex;
     align-items:center;
+    height:auto;
 
 }
 .card-img {
@@ -329,6 +333,7 @@ height:auto;
 .training-card:hover  .card-btn {
     color:black;
     background-color:white;
+    cursor:pointer;
 }
 #contact {
     margin:0;
@@ -421,7 +426,7 @@ padding:5px;
     }
     .nav-link {
         display:flex;
-        padding:10px 0px;
+        padding:15px 0px;
     }
     #jumbotron {
         background-size:cover;

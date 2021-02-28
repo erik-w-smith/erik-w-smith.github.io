@@ -246,7 +246,6 @@ flex-wrap: wrap;
     font-family: 'Poppins';
     letter-spacing: 2px;
     border-radius: 12px;
-    overflow:hidden;
 }
 .card-header {
    flex:2; 

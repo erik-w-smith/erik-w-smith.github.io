@@ -229,6 +229,7 @@ flex-wrap: wrap;
     letter-spacing:5px;
     align-items: center;
     margin-bottom:25px;
+    flex-wrap: wrap;
 }
 .training-cards {
     display:flex;

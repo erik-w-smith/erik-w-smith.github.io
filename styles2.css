@@ -135,7 +135,7 @@ flex-wrap: wrap;
     flex-direction: column;
     align-content:center;
     background-color: rgba(209, 98, 116, 0.8);
-    min-height:450px;
+    min-height:fit-content;
 }
 .about-right > h1 {
     font-family: 'Poppins', cursive;
@@ -467,7 +467,7 @@ padding:5px;
     }
     .about-right {
         align-items:center;
-        min-height:450px;
+        min-height:fit-content;
         display:flex;
 
     }
@@ -542,7 +542,7 @@ padding:5px;
     }
     .about-right {
         align-items:center;
-        min-height:450px;
+        min-height:fit-content;
         display:flex;
 
     }

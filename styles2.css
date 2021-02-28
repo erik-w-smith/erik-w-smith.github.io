@@ -249,6 +249,7 @@ flex-wrap: wrap;
     font-family: 'Poppins';
     letter-spacing: 2px;
     border-radius: 12px;
+    overflow:hidden;
 }
 .card-header {
    flex:2; 
@@ -397,6 +398,26 @@ display: flex;
 align-items: flex-end;
 padding:5px;
 
+}
+@media screen and (max-width: 375px){
+
+    .email_icon {
+        font-size:12px;
+    }
+    .contact-name {
+        font-size:16px;
+        letter-spacing:2px;
+    }
+    .email_address {
+        border-bottom:2px solid white;
+        letter-spacing:2px;
+        font-size:12px;
+    }
+    #jumbotron  h1 {
+        font-size:100px;
+        margin:auto;
+        font-family: 'Tangerine', cursive;
+    }
 
 }
 @media screen and (max-width: 650px) {

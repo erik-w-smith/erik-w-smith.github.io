@@ -71,7 +71,7 @@ body {
 
 .navbar {
     color:white;
-    background-color: rgba(7,6,8,0.8);
+    background-color: rgba(7,6,8,0.9);
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -390,6 +390,7 @@ display: flex;
 align-items: flex-end;
 padding:5px;
 
+
 }
 @media screen and (max-width: 650px) {
     .hamburger-container {
@@ -404,20 +405,23 @@ padding:5px;
      .nav-items {
         position:absolute;
         top:60px;
-        left:0px;
+        right:0px;
         height:45px;
-        background-color:rgba(7,6,8,1);
+        background-color:rgba(7,6,8,0.9);
         margin:0;
-        width:100%;
+        width:50%;
         height:auto;
-        padding:0;
+        padding:25px 0;
         display:none;
+        flex-direction: column;
         flex-wrap:wrap;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
+        border-radius: 0 6px;
     }
     .nav-link {
         display:flex;
+        padding:10px 0px;
     }
     #jumbotron {
         background-size:cover;
@@ -446,7 +450,7 @@ padding:5px;
         flex-direction:column;
         margin:0px;
         padding:0px;
-        height:100%;
+        height:auto;
         justify-content: center;
     }
     .about-left {
@@ -459,6 +463,7 @@ padding:5px;
     .about-right {
         align-items:center;
         height:auto;
+        display:flex;
 
     }
     .about-right > p {
@@ -485,7 +490,7 @@ padding:5px;
         letter-spacing: 1px;
         font-size:18px;
         top:0px;
-        left:0px;
+        right:0px;
         float:right;
         background-color:transparent;
         position:unset;
@@ -520,7 +525,7 @@ padding:5px;
         flex-direction:column;
         margin:0px;
         padding:0px;
-        height:100%;
+        height:auto;
         justify-content: center;
     }
     .about-left {
@@ -549,22 +554,28 @@ padding:5px;
     .hamburger-container {
         display:block;
     }
-    .nav-items {
+     .nav-items {
         position:absolute;
         top:60px;
-        left:0px;
+        right:0px;
         height:45px;
-        background-color:rgba(7,6,8,1);
+        background-color:rgba(7,6,8,0.9);
         margin:0;
-        width:100%;
-        padding:0;
+        width:50%;
+        height:auto;
+        padding:25px 0;
         display:none;
-        align-items: center;
+        flex-direction: column;
+        flex-wrap:wrap;
+        align-items: flex-start;
         justify-content: center;
+        border-radius: 0 6px;
     }
     .nav-link {
         display:flex;
-    }
+        padding:10px 0px;
+    }   
+
 }
 @media screen and (min-width: 795px) {
     .hamburger-container {

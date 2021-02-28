@@ -135,7 +135,7 @@ flex-wrap: wrap;
     flex-direction: column;
     align-content:center;
     background-color: rgba(209, 98, 116, 0.8);
-    height:auto;
+    min-height:100%;
 }
 .about-right > h1 {
     font-family: 'Poppins', cursive;
@@ -467,7 +467,7 @@ padding:5px;
     }
     .about-right {
         align-items:center;
-        height:auto;
+        min-height:100%;
         display:flex;
 
     }
@@ -542,7 +542,8 @@ padding:5px;
     }
     .about-right {
         align-items:center;
-        height:auto;
+        min-height:100%;
+        display:flex;
 
     }
     .about-right > p {

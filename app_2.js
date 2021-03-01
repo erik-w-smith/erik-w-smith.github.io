@@ -34,7 +34,7 @@ function toggleNav() {
 
 
 function comingSoon(x) {
-    x.children[0].src = "/images/coming_soon_2.jfif";
+    x.children[0].src = "/images/coming_soon.png";
 }
 function skinCareImg(x){
     x.children[0].src="/images/white_bottles_sm.jpg";

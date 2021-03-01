@@ -43,13 +43,13 @@ body {
 }
 #jumbotron {
     display:flex;
-    color:white;
+    color:rgb(70, 63, 58);
     align-items: center;
     justify-content: flex-start;
     margin:0px;
     padding:0px;
     width:100%;
-    background-image:url(/images/brown_theme.jpeg);
+    background-image:url(/images/whitetheme2.jpg);
     background-repeat:no-repeat;
 }
 #jumbotron > div {
@@ -67,6 +67,7 @@ body {
     font-size:144px;
     margin:auto;
     font-family: 'Tangerine', cursive;
+    
 }
 
 .navbar {
@@ -215,7 +216,7 @@ flex-wrap: wrap;
     margin:0;
     padding:30px 10px 75px 10px;
     min-height:800px;
-    background-color:white;
+    background-color:#F5EAE6;
     color:white;
     display:flex;
     flex-direction: column;
@@ -241,7 +242,7 @@ flex-wrap: wrap;
 .training-card {
     height:400px;
     width:300px;
-    background-color:rgb(70, 63, 58);
+    background-color:rgb(209, 98, 116, 0.8);
     margin:50px;
     display:flex;
     flex-direction: column;
@@ -255,7 +256,7 @@ flex-wrap: wrap;
    flex:2; 
    width:100%;
    font-size:20px;
-   color:white;
+   color:rgba(7,6,8,0.9);
    display:flex;
     margin:auto;
     align-items:center;
@@ -315,9 +316,9 @@ height:auto;
     justify-content: center;
     width:50%;
     height:50px;
-    background-color: rgb(209, 98, 116);
+    background-color:#F5EAE6;
     border:2px solid transparent;
-    color:white;
+    color:rgba(7,6,8,0.9);
     font-size:18px;
     border-radius:10px;
     letter-spacing: 2px;
@@ -326,25 +327,29 @@ height:auto;
     cursor: pointer;
 }
 .training-card:hover > .card-header {
-    color:black;
-    background-color: rgb(209, 98, 116);
+    color:#F5EAE6;
+    background-color: rgb(70, 63, 58);
 }
 .training-card:hover > .card-footer {
-    color:black;
-    background-color: rgb(209, 98, 116);
+    color:#F5EAE6;
+    background-color: rgb(70, 63, 58);
 }
 .training-card:hover  .card-btn {
-    color:black;
-    background-color:white;
+    color:#F5EAE6;
+    background-color:rgb(209, 98, 116,0.8);
     cursor:pointer;
 }
 #contact {
     margin:0;
     padding:10px;
     color:white;
-    min-height:500px;
+    min-height:450px;
     background-color:rgb(70, 63, 58);
     font-family: 'Poppins', cursive;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 #contact > h1 {
     font-size:48px;
@@ -391,13 +396,45 @@ height:auto;
 }
 
 .footer {
-text-align:center;
 color:white;
-height:200px;
+height:auto;
 display: flex;
-align-items: flex-end;
-padding:5px;
+padding:50px 0;
+justify-content: space-between;
+align-items: center;
+margin:0;
+width:100%;
 
+}
+.copyright {
+    width:50%;
+}
+.page-links {
+    list-style-type: none;
+    display:flex;
+    justify-content: flex-end;
+    width:100%;
+   align-items: flex-end;
+}   
+.page-link{
+    display:flex;
+    padding:0 15px;
+    text-decoration: none;
+    color:#F5EAE6;
+}
+.page-link:visited {
+    text-decoration: none;
+}
+.page-link:hover {
+    text-decoration: underline;
+}
+.page-link-active {
+    color:rgb(255, 255, 155);
+    text-decoration: none;
+}
+.page-link-active:hover {
+    text-decoration: none;
+    cursor: unset;
 }
 @media screen and (max-width: 375px){
 
@@ -500,9 +537,20 @@ padding:5px;
     .training-header {
         font-size:32px;
     }
-    .footer {
-        justify-content: center;
+
+    .copyright, .page-link {
+        font-size:14px;
     }
+    .copyright {
+        width:100%;
+    }
+    .page-links {
+        flex-direction: column;
+        align-items: flex-end;
+
+    }
+
+
 
 }
 @media screen and (min-width: 650px) and (max-width: 1280px) {
